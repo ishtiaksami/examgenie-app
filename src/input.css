@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-38 md:text-58 leading-[120%] font-normal;
+  }
+  h2 {
+    @apply text-28 md:text-38 leading-[140%] font-normal;
+  }
+
+  h3 {
+    @apply text-base leading-[120%] font-normal tracking-[0.8px];
+  }
+
+  p {
+    @apply text-base leading-[180%] font-light tracking-[0.36px];
+  }
+}
+
+@layer components {
+  body {
+    @apply font-inter;
+  }
+  .holder {
+    @apply mx-auto max-w-[94.5rem] px-7;
+  }
+}
+
+.btn {
+  @apply px-6 py-3 text-black border-2 border-black border-solid text-sm font-medium  transition-all duration-500 hover:bg-black hover:text-white;
+}
+
+.btn-white {
+  @apply px-6 py-3 text-white border-white border-solid border-2 font-medium transition-all duration-500 hover:bg-white hover:text-black text-sm;
+}
+.btn:hover > svg > path {
+  @apply fill-white transition-all duration-300;
+}
+.btn-white:hover > svg > path {
+  @apply fill-black transition-all duration-300;
+}
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out;
+}
