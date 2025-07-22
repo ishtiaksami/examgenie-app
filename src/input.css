@@ -11,7 +11,7 @@
     @apply text-38 md:text-58 leading-[120%] font-normal;
   }
   h2 {
-    @apply text-28 md:text-38 leading-[140%] font-normal;
+    @apply text-2xl md:text-38 leading-[140%] font-normal;
   }
 
   h3 {
