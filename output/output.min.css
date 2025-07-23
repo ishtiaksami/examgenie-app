@@ -916,6 +916,10 @@ body{
   padding: 2rem;
 }
 
+.\!p-5{
+  padding: 1.25rem !important;
+}
+
 .px-3{
   padding-left: 0.75rem;
   padding-right: 0.75rem;
